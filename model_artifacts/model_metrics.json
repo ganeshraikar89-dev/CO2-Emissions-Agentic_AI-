@@ -1,0 +1,20 @@
+[
+    {
+        "Model":"Linear Regression",
+        "R2 Score":0.991619896,
+        "RMSE":5.3688393105,
+        "MAE":3.0201688825
+    },
+    {
+        "Model":"Random Forest",
+        "R2 Score":0.9967750664,
+        "RMSE":3.3305510164,
+        "MAE":1.743563933
+    },
+    {
+        "Model":"Extra Trees",
+        "R2 Score":0.9965321085,
+        "RMSE":3.453730526,
+        "MAE":1.6293691009
+    }
+]
