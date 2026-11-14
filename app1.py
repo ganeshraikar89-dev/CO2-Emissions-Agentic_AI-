@@ -4,6 +4,16 @@ import plotly.express as px
 from langchain_core.messages import HumanMessage
 
 from Data_Loader import load_data
+import streamlit as st
+import os
+
+# Load Groq API key from Streamlit Cloud Secrets
+if "GROQ_API_KEY" in st.secrets:
+    os.environ["GROQ_API_KEY"] = st.secrets["GROQ_API_KEY"]
+
+# Import agents only after loading API key
+from supervisor_agent import supervisor_app
+
 from supervisor_agent import supervisor_app
 from Create_prediction import render_prediction_page
 
